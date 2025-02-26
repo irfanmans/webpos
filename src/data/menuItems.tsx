@@ -34,7 +34,7 @@ const menuItems: MenuItem[] = [
   {
     id: "1",
     image: nasiGoreng,
-    nama: "Nasi Goreng Spesial",
+    nama: "Nasi Goreng",
     tipeMakanan: "breakfast",
     harga: 25000,
     lokasi: "Jakarta",
