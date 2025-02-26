@@ -13,8 +13,8 @@ interface CheckoutProps {
   openMenu?: boolean;
   setOpenMenu?: (value: boolean) => void;
   cart?: MenuItem[];
-  setCart: (e: MenuItem[]) => void;
-  onHandleDeleteItemCart: (id: string) => void;
+  setCart?: (e: MenuItem[]) => void;
+  onHandleDeleteItemCart?: (id: string) => void;
 }
 
 export default function Checkout({
@@ -34,7 +34,7 @@ export default function Checkout({
           }
         : item
     );
-    setCart(updateCart);
+    setCart?.(updateCart);
   }
 
   function handleDecrement(id: string) {
@@ -47,7 +47,7 @@ export default function Checkout({
           }
         : item
     );
-    setCart(updateCart);
+    setCart?.(updateCart);
   }
 
   return (
@@ -115,7 +115,7 @@ export default function Checkout({
                 <Button
                   type="button"
                   className="bg-blue-500 py-1.5 px-5 sm:text-sm sm:mt-2 rounded-xl text-white cursor-pointer"
-                  onClick={() => onHandleDeleteItemCart(item.id)}
+                  onClick={() => onHandleDeleteItemCart?.(item.id)}
                 >
                   Batalkan
                 </Button>
