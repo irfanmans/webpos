@@ -1,0 +1,336 @@
+import nasiGoreng from "../assets/images/nasiGoreng.jpeg";
+import sate from "../assets/images/sate.jpeg";
+import rendang from "../assets/images/rendang.jpeg";
+import gadoGado from "../assets/images/gadoGado.jpeg";
+import bakso from "../assets/images/bakso.jpeg";
+import mieAyam from "../assets/images/mieAyam.jpeg";
+import esTeh from "../assets/images/esTeh.jpeg";
+import jusAlpukat from "../assets/images/jusAlpukat.jpeg";
+import kopiTubruk from "../assets/images/kopiTubruk.jpeg";
+import donatCoklat from "../assets/images/donatCoklat.jpeg";
+import croissantButter from "../assets/images/croissant.jpeg";
+import esCampur from "../assets/images/esCampur.jpeg";
+import sotoBetawi from "../assets/images/sotoBetawi.jpeg";
+import martabakManis from "../assets/images/martabakManis.jpeg";
+import esDoger from "../assets/images/esDoger.jpeg";
+import buburAyam from "../assets/images/buburAyam.jpeg";
+import kebabTurki from "../assets/images/kebab.jpeg";
+import pecelMadiun from "../assets/images/pecelMadiun.jpeg";
+import pizza from "../assets/images/pizza.jpeg";
+import ayamBakar from "../assets/images/ayamBakar.jpeg";
+import sandwichTuna from "../assets/images/sandwichTuna.jpeg";
+import jusMangga from "../assets/images/jusMangga.jpeg";
+import browniesCoklat from "../assets/images/brownies.jpeg";
+import nasiUduk from "../assets/images/nasiUduk.jpeg";
+import burgerBeef from "../assets/images/burgerBeef.jpeg";
+import esCincau from "../assets/images/esCincau.jpeg";
+import ayamGeprek from "../assets/images/ayamGeprek.jpeg";
+import cappucino from "../assets/images/cappucino.jpeg";
+import rotiBakar from "../assets/images/rotiBakar.jpeg";
+import pancakeStrawberry from "../assets/images/pancakeStrawberry.jpeg";
+import MenuItem from "../types/menuItems";
+
+const menuItems: MenuItem[] = [
+  {
+    id: "1",
+    image: nasiGoreng,
+    nama: "Nasi Goreng Spesial",
+    tipeMakanan: "breakfast",
+    harga: 25000,
+    lokasi: "Jakarta",
+    hargaAwal: 25000,
+    qty: 0,
+  },
+  {
+    id: "2",
+    image: sate,
+    nama: "Sate Ayam Madura",
+    tipeMakanan: "fast food",
+    harga: 30000,
+    lokasi: "Surabaya",
+    hargaAwal: 30000,
+    qty: 0,
+  },
+  {
+    id: "3",
+    image: rendang,
+    nama: "Rendang Padang",
+    tipeMakanan: "healthy",
+    harga: 50000,
+    lokasi: "Padang",
+    hargaAwal: 50000,
+    qty: 0,
+  },
+  {
+    id: "4",
+    image: gadoGado,
+    nama: "Gado-Gado",
+    tipeMakanan: "healthy",
+    harga: 20000,
+    lokasi: "Jakarta",
+    hargaAwal: 20000,
+    qty: 0,
+  },
+  {
+    id: "5",
+    image: bakso,
+    nama: "Bakso Malang",
+    tipeMakanan: "fast food",
+    harga: 25000,
+    lokasi: "Malang",
+    hargaAwal: 25000,
+    qty: 0,
+  },
+  {
+    id: "6",
+    image: mieAyam,
+    nama: "Mie Ayam",
+    tipeMakanan: "fast food",
+    harga: 18000,
+    lokasi: "Bandung",
+    hargaAwal: 18000,
+    qty: 0,
+  },
+  {
+    id: "7",
+    image: esTeh,
+    nama: "Es Teh Manis",
+    tipeMakanan: "drinks",
+    harga: 8000,
+    lokasi: "Semarang",
+    hargaAwal: 8000,
+    qty: 0,
+  },
+  {
+    id: "8",
+    image: jusAlpukat,
+    nama: "Jus Alpukat",
+    tipeMakanan: "juice",
+    harga: 15000,
+    lokasi: "Bali",
+    hargaAwal: 15000,
+    qty: 0,
+  },
+  {
+    id: "9",
+    image: kopiTubruk,
+    nama: "Kopi Tubruk",
+    tipeMakanan: "drinks",
+    harga: 12000,
+    lokasi: "Jogja",
+    hargaAwal: 12000,
+    qty: 0,
+  },
+  {
+    id: "10",
+    image: donatCoklat,
+    nama: "Donat Coklat",
+    tipeMakanan: "dessert",
+    harga: 10000,
+    lokasi: "Surabaya",
+    hargaAwal: 10000,
+    qty: 0,
+  },
+  {
+    id: "11",
+    image: croissantButter,
+    nama: "Croissant Butter",
+    tipeMakanan: "breakfast",
+    harga: 20000,
+    lokasi: "Bali",
+    hargaAwal: 20000,
+    qty: 0,
+  },
+  {
+    id: "12",
+    image: esCampur,
+    nama: "Es Campur",
+    tipeMakanan: "juice",
+    harga: 18000,
+    lokasi: "Medan",
+    hargaAwal: 18000,
+    qty: 0,
+  },
+  {
+    id: "13",
+    image: sotoBetawi,
+    nama: "Soto Betawi",
+    tipeMakanan: "healthy",
+    harga: 30000,
+    lokasi: "Jakarta",
+    hargaAwal: 30000,
+    qty: 0,
+  },
+  {
+    id: "14",
+    image: martabakManis,
+    nama: "Martabak Manis",
+    tipeMakanan: "dessert",
+    harga: 40000,
+    lokasi: "Bandung",
+    hargaAwal: 40000,
+    qty: 0,
+  },
+  {
+    id: "15",
+    image: esDoger,
+    nama: "Es Doger",
+    tipeMakanan: "juice",
+    harga: 15000,
+    lokasi: "Surabaya",
+    hargaAwal: 15000,
+    qty: 0,
+  },
+  {
+    id: "16",
+    image: buburAyam,
+    nama: "Bubur Ayam",
+    tipeMakanan: "breakfast",
+    harga: 15000,
+    lokasi: "Jakarta",
+    hargaAwal: 15000,
+    qty: 0,
+  },
+  {
+    id: "17",
+    image: kebabTurki,
+    nama: "Kebab Turki",
+    tipeMakanan: "fast food",
+    harga: 25000,
+    lokasi: "Bali",
+    hargaAwal: 25000,
+    qty: 0,
+  },
+  {
+    id: "18",
+    image: pecelMadiun,
+    nama: "Pecel Madiun",
+    tipeMakanan: "healthy",
+    harga: 20000,
+    lokasi: "Madiun",
+    hargaAwal: 20000,
+    qty: 0,
+  },
+  {
+    id: "19",
+    image: pizza,
+    nama: "Pizza Pepperoni",
+    tipeMakanan: "fast food",
+    harga: 75000,
+    lokasi: "Jakarta",
+    hargaAwal: 75000,
+    qty: 0,
+  },
+  {
+    id: "20",
+    image: ayamBakar,
+    nama: "Ayam Bakar",
+    tipeMakanan: "healthy",
+    harga: 35000,
+    lokasi: "Jogja",
+    hargaAwal: 35000,
+    qty: 0,
+  },
+  {
+    id: "21",
+    image: sandwichTuna,
+    nama: "Sandwich Tuna",
+    tipeMakanan: "breakfast",
+    harga: 30000,
+    lokasi: "Bali",
+    hargaAwal: 30000,
+    qty: 0,
+  },
+  {
+    id: "22",
+    image: jusMangga,
+    nama: "Jus Mangga",
+    tipeMakanan: "juice",
+    harga: 18000,
+    lokasi: "Makassar",
+    hargaAwal: 18000,
+    qty: 0,
+  },
+  {
+    id: "23",
+    image: browniesCoklat,
+    nama: "Brownies Coklat",
+    tipeMakanan: "dessert",
+    harga: 25000,
+    lokasi: "Bandung",
+    hargaAwal: 25000,
+    qty: 0,
+  },
+  {
+    id: "24",
+    image: nasiUduk,
+    nama: "Nasi Uduk",
+    tipeMakanan: "breakfast",
+    harga: 15000,
+    lokasi: "Jakarta",
+    hargaAwal: 15000,
+    qty: 0,
+  },
+  {
+    id: "25",
+    image: burgerBeef,
+    nama: "Burger Beef",
+    tipeMakanan: "fast food",
+    harga: 40000,
+    lokasi: "Surabaya",
+    hargaAwal: 40000,
+    qty: 0,
+  },
+  {
+    id: "26",
+    image: esCincau,
+    nama: "Es Cincau",
+    tipeMakanan: "drinks",
+    harga: 10000,
+    lokasi: "Semarang",
+    hargaAwal: 10000,
+    qty: 0,
+  },
+  {
+    id: "27",
+    image: ayamGeprek,
+    nama: "Ayam Geprek",
+    tipeMakanan: "fast food",
+    harga: 25000,
+    lokasi: "Jogja",
+    hargaAwal: 25000,
+    qty: 0,
+  },
+  {
+    id: "28",
+    image: cappucino,
+    nama: "Capuccino",
+    tipeMakanan: "drinks",
+    harga: 20000,
+    lokasi: "Bandung",
+    hargaAwal: 25000,
+    qty: 0,
+  },
+  {
+    id: "29",
+    image: rotiBakar,
+    nama: "Roti Bakar",
+    tipeMakanan: "breakfast",
+    harga: 18000,
+    lokasi: "Bogor",
+    hargaAwal: 18000,
+    qty: 0,
+  },
+  {
+    id: "30",
+    image: pancakeStrawberry,
+    nama: "Pancake Strawberry",
+    tipeMakanan: "dessert",
+    harga: 35000,
+    lokasi: "Bali",
+    hargaAwal: 35000,
+    qty: 0,
+  },
+];
+
+export default menuItems;
