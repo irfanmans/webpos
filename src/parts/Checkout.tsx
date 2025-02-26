@@ -52,7 +52,7 @@ export default function Checkout({
 
   return (
     <div
-      className={`fixed top-0 right-0 w-4/5 sm:w-1/2 md:w-1/2 lg:w-1/3 h-full font-poppins bg-white shadow-lg pt-9 transition-transform duration-300 ${
+      className={`fixed top-0 right-0 w-full sm:w-1/2 md:w-1/2 lg:w-1/3 h-full font-poppins bg-white shadow-lg pt-9 transition-transform duration-300 ${
         openMenu ? "translate-x-0" : "translate-x-full"
       }`}
     >
@@ -78,20 +78,20 @@ export default function Checkout({
       <div className="w-4/5 mx-auto h-px bg-gray-700 my-4 rounded-full"></div>
 
       {cart.length > 0 ? (
-        <div className="px-5 py-5 flex flex-col gap-8 max-h-[70vh] overflow-y-auto">
+        <div className="px-3 py-5 flex flex-col gap-8 max-h-[70vh] overflow-y-auto">
           {cart.map((item) => (
-            <div className="grid grid-cols-2 px-3" key={item.id}>
+            <div className="grid grid-cols-2 gap-0 sm:gap-0 px-3" key={item.id}>
               <ImageMenu
                 src={item.image}
                 altDesc={item.nama}
-                className="rounded-2xl sm:w-28 lg:w-4/5"
+                className="rounded-2xl w-4/5 sm:w-28 lg:w-4/5"
               />
-              <div className="flex flex-col xl:justify-between">
+              <div className="flex flex-col justify-between xl:justify-between">
                 <div>
-                  <h2 className="font-bold text-black/75 sm:text-sm xl:text-lg">
+                  <h2 className="font-bold text-black/75 text-[17px] sm:text-sm xl:text-lg">
                     {item.nama}
                   </h2>
-                  <p className="text-black/75 sm:text-sm xl:text-md">
+                  <p className="text-black/75 text-[] sm:text-sm xl:text-md">
                     {formatRupiah(item.harga)}
                   </p>
                 </div>
