@@ -5,7 +5,7 @@ import { FaArrowAltCircleRight } from "react-icons/fa";
 // import { FaMinus } from "react-icons/fa6";
 import IconBrand from "../ui/IconBrand";
 import ImageMenu from "../ui/ImageMenu";
-import Button from "../components/Button";
+// import Button from "../components/Button";
 import MenuItem from "../types/menuItems";
 // import formatRupiah from "../lib/formatHarga";
 
@@ -21,8 +21,8 @@ export default function Checkout({
   openMenu,
   setOpenMenu,
   cart = [],
-  onHandleDeleteItemCart,
-}: // setCart,
+}: // onHandleDeleteItemCart,
+// setCart,
 CheckoutProps) {
   // function handleIncrement(id: string) {
   //   const updateCart = cart.map((item) =>
@@ -89,15 +89,6 @@ CheckoutProps) {
                 altDesc={item.nama}
                 className="rounded-lg w-1/3 sm:w-1/3"
               />
-              {/* <div className="">
-                <Button
-                  type="button"
-                  className="bg-blue-500 py-1.5 px-5 sm:text-xs sm:mt-2 rounded-xl text-white cursor-pointer"
-                  onClick={() => onHandleDeleteItemCart?.(item.id)}
-                >
-                  Batalkan
-                </Button>
-              </div> */}
             </div>
           ))}
         </div>
