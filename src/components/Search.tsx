@@ -20,7 +20,7 @@ export default function Search({ query, setQuery }: SearchProps) {
           type="text"
           id="search"
           name="search"
-          className="focus:outline-none font-poppins w-full"
+          className="focus:outline-none font-poppins w-full bg-slate-100"
           placeholder="Search"
           value={query}
           onChange={handleQuerySearch}

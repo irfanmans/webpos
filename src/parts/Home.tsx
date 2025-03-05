@@ -89,7 +89,7 @@ export default function Home({ dataMenu }: HomeProps) {
 
       <div className="py-5">
         <div className="flex justify-between items-center font-poppins">
-          <h1 className="text-xl font-bold">Discover our Menu</h1>
+          <h1 className="text-2xl font-bold">Discover our Menu</h1>
           <span className="py-2 px-5 bg-black/10 rounded-4xl">
             {dataMenu.length} Menu
           </span>

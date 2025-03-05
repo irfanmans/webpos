@@ -1,13 +1,13 @@
 import Avatar from "../ui/Avatar";
 import User from "../assets/images/user.jpeg";
 import { FaArrowAltCircleRight } from "react-icons/fa";
-import { FaPlus } from "react-icons/fa6";
-import { FaMinus } from "react-icons/fa6";
+// import { FaPlus } from "react-icons/fa6";
+// import { FaMinus } from "react-icons/fa6";
 import IconBrand from "../ui/IconBrand";
 import ImageMenu from "../ui/ImageMenu";
 import Button from "../components/Button";
 import MenuItem from "../types/menuItems";
-import formatRupiah from "../lib/formatHarga";
+// import formatRupiah from "../lib/formatHarga";
 
 interface CheckoutProps {
   openMenu?: boolean;
@@ -22,33 +22,33 @@ export default function Checkout({
   setOpenMenu,
   cart = [],
   onHandleDeleteItemCart,
-  setCart,
-}: CheckoutProps) {
-  function handleIncrement(id: string) {
-    const updateCart = cart.map((item) =>
-      item.id === id
-        ? {
-            ...item,
-            qty: item.qty + 1,
-            harga: item.hargaAwal * (item.qty + 1),
-          }
-        : item
-    );
-    setCart?.(updateCart);
-  }
+}: // setCart,
+CheckoutProps) {
+  // function handleIncrement(id: string) {
+  //   const updateCart = cart.map((item) =>
+  //     item.id === id
+  //       ? {
+  //           ...item,
+  //           qty: item.qty + 1,
+  //           harga: item.hargaAwal * (item.qty + 1),
+  //         }
+  //       : item
+  //   );
+  //   setCart?.(updateCart);
+  // }
 
-  function handleDecrement(id: string) {
-    const updateCart = cart.map((item) =>
-      item.id === id && item.qty > 1
-        ? {
-            ...item,
-            qty: item.qty - 1,
-            harga: item.hargaAwal * (item.qty - 1),
-          }
-        : item
-    );
-    setCart?.(updateCart);
-  }
+  // function handleDecrement(id: string) {
+  //   const updateCart = cart.map((item) =>
+  //     item.id === id && item.qty > 1
+  //       ? {
+  //           ...item,
+  //           qty: item.qty - 1,
+  //           harga: item.hargaAwal * (item.qty - 1),
+  //         }
+  //       : item
+  //   );
+  //   setCart?.(updateCart);
+  // }
 
   return (
     <div
@@ -57,7 +57,7 @@ export default function Checkout({
       }`}
     >
       <div
-        className="p-2 bg-purple-500 absolute left-[15px] top-11 rounded-full cursor-pointer"
+        className="p-2 bg-purple-500 absolute left-[15px] top-10 rounded-full cursor-pointer"
         onClick={() => setOpenMenu?.(false)}
       >
         <IconBrand
@@ -80,46 +80,24 @@ export default function Checkout({
       {cart.length > 0 ? (
         <div className="px-3 py-5 flex flex-col gap-8 max-h-[70vh] overflow-y-auto">
           {cart.map((item) => (
-            <div className="grid grid-cols-2 gap-0 sm:gap-0 px-3" key={item.id}>
+            <div
+              className="flex gap-7 px-3 py-3 shadow-lg rounded-lg"
+              key={item.id}
+            >
               <ImageMenu
                 src={item.image}
                 altDesc={item.nama}
-                className="rounded-2xl w-4/5 sm:w-28 lg:w-4/5"
+                className="rounded-lg w-1/3 sm:w-1/3"
               />
-              <div className="flex flex-col justify-between xl:justify-between">
-                <div>
-                  <h2 className="font-bold text-black/75 text-[17px] sm:text-sm xl:text-lg">
-                    {item.nama}
-                  </h2>
-                  <p className="text-black/75 text-[] sm:text-sm xl:text-md">
-                    {formatRupiah(item.harga)}
-                  </p>
-                </div>
-
-                <div className="mt-2">
-                  <Button
-                    className="p-1 bg-red-400 text-white rounded-full cursor-pointer"
-                    onClick={() => handleDecrement(item.id)}
-                  >
-                    <IconBrand icon={FaMinus} size={15} />
-                  </Button>
-                  <span className="px-4">{item.qty}</span>
-                  <Button
-                    className="p-1 bg-red-400 text-white rounded-full cursor-pointer"
-                    onClick={() => handleIncrement(item.id)}
-                  >
-                    <IconBrand icon={FaPlus} size={15} />
-                  </Button>
-                </div>
-
+              {/* <div className="">
                 <Button
                   type="button"
-                  className="bg-blue-500 py-1.5 px-5 sm:text-sm sm:mt-2 rounded-xl text-white cursor-pointer"
+                  className="bg-blue-500 py-1.5 px-5 sm:text-xs sm:mt-2 rounded-xl text-white cursor-pointer"
                   onClick={() => onHandleDeleteItemCart?.(item.id)}
                 >
                   Batalkan
                 </Button>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
