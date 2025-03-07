@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import useCart from "../CustomHook/useCart";
 import Card from "../components/Card";
 import Search from "../components/Search";
 import { FaCircleLeft } from "react-icons/fa6";
@@ -11,51 +12,17 @@ interface HomeProps {
 }
 
 export default function Home({ dataMenu }: HomeProps) {
-  const [openMenu, setOpenMenu] = useState<boolean>(false);
   const [query, setQuery] = useState<string>("");
-  const [cart, setCart] = useState<MenuItem[]>(() => {
-    const savedCart = localStorage.getItem("cart");
-    return savedCart ? JSON.parse(savedCart) : [];
-  });
 
-  function handleDeleteItemCart(id: number | string) {
-    setCart((value) => value.filter((item) => item.id !== id));
-  }
-
-  function handleOpenMenu() {
-    setOpenMenu(!openMenu);
-  }
-
-  function handleAddToCart(item: MenuItem) {
-    const existData = cart.find((cartItem) => cartItem.id === item.id);
-
-    if (existData) {
-      const updateData = cart.map((cartItem) =>
-        cartItem.id === item.id
-          ? {
-              ...cartItem,
-              qty: (cartItem.qty ?? 0) + 1,
-              harga:
-                (cartItem.hargaAwal ?? cartItem.harga) *
-                ((cartItem.qty ?? 0) + 1),
-            }
-          : cartItem
-      );
-      setCart(updateData);
-    } else {
-      setCart([
-        ...cart,
-        { ...item, qty: 1, harga: item.harga, hargaAwal: item.harga },
-      ]);
-    }
-  }
-
-  useEffect(
-    function () {
-      localStorage.setItem("cart", JSON.stringify(cart));
-    },
-    [cart]
-  );
+  const {
+    openMenu,
+    setOpenMenu,
+    cart,
+    setCart,
+    handleOpenMenu,
+    handleDeleteItemCart,
+    handleAddToCart,
+  } = useCart();
 
   const filterMenu = dataMenu.filter((item) =>
     item.nama.toLowerCase().includes(query.toLowerCase())
@@ -83,14 +50,14 @@ export default function Home({ dataMenu }: HomeProps) {
         openMenu={openMenu}
         setOpenMenu={setOpenMenu}
         cart={cart}
-        onHandleDeleteItemCart={handleDeleteItemCart}
         setCart={setCart}
+        onHandleDeleteItemCart={handleDeleteItemCart}
       />
 
       <div className="py-5">
         <div className="flex justify-between items-center font-poppins">
-          <h1 className="text-2xl font-bold">Discover our Menu</h1>
-          <span className="py-2 px-5 bg-black/10 rounded-4xl">
+          <h1 className="text-xl font-bold">Discover our Menu</h1>
+          <span className="py-2 px-5 bg-black/10 rounded-2xl">
             {dataMenu.length} Menu
           </span>
         </div>

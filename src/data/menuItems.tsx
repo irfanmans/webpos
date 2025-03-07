@@ -39,7 +39,7 @@ const menuItems: MenuItem[] = [
     harga: 25000,
     lokasi: "Jakarta",
     hargaAwal: 25000,
-    qty: 0,
+    qty: 1,
   },
   {
     id: "2",
@@ -49,7 +49,7 @@ const menuItems: MenuItem[] = [
     harga: 30000,
     lokasi: "Surabaya",
     hargaAwal: 30000,
-    qty: 0,
+    qty: 1,
   },
   {
     id: "3",
@@ -59,7 +59,7 @@ const menuItems: MenuItem[] = [
     harga: 50000,
     lokasi: "Padang",
     hargaAwal: 50000,
-    qty: 0,
+    qty: 1,
   },
   {
     id: "4",
@@ -69,7 +69,7 @@ const menuItems: MenuItem[] = [
     harga: 20000,
     lokasi: "Jakarta",
     hargaAwal: 20000,
-    qty: 0,
+    qty: 1,
   },
   {
     id: "5",
@@ -79,7 +79,7 @@ const menuItems: MenuItem[] = [
     harga: 25000,
     lokasi: "Malang",
     hargaAwal: 25000,
-    qty: 0,
+    qty: 1,
   },
   {
     id: "6",
@@ -89,7 +89,7 @@ const menuItems: MenuItem[] = [
     harga: 18000,
     lokasi: "Bandung",
     hargaAwal: 18000,
-    qty: 0,
+    qty: 1,
   },
   {
     id: "7",
@@ -99,7 +99,7 @@ const menuItems: MenuItem[] = [
     harga: 8000,
     lokasi: "Semarang",
     hargaAwal: 8000,
-    qty: 0,
+    qty: 1,
   },
   {
     id: "8",
@@ -109,7 +109,7 @@ const menuItems: MenuItem[] = [
     harga: 15000,
     lokasi: "Bali",
     hargaAwal: 15000,
-    qty: 0,
+    qty: 1,
   },
   {
     id: "9",
@@ -119,7 +119,7 @@ const menuItems: MenuItem[] = [
     harga: 12000,
     lokasi: "Jogja",
     hargaAwal: 12000,
-    qty: 0,
+    qty: 1,
   },
   {
     id: "10",
@@ -129,7 +129,7 @@ const menuItems: MenuItem[] = [
     harga: 10000,
     lokasi: "Surabaya",
     hargaAwal: 10000,
-    qty: 0,
+    qty: 1,
   },
   {
     id: "11",
@@ -139,7 +139,7 @@ const menuItems: MenuItem[] = [
     harga: 20000,
     lokasi: "Bali",
     hargaAwal: 20000,
-    qty: 0,
+    qty: 1,
   },
   {
     id: "12",
@@ -149,7 +149,7 @@ const menuItems: MenuItem[] = [
     harga: 18000,
     lokasi: "Medan",
     hargaAwal: 18000,
-    qty: 0,
+    qty: 1,
   },
   {
     id: "13",
@@ -159,7 +159,7 @@ const menuItems: MenuItem[] = [
     harga: 30000,
     lokasi: "Jakarta",
     hargaAwal: 30000,
-    qty: 0,
+    qty: 1,
   },
   {
     id: "14",
@@ -169,7 +169,7 @@ const menuItems: MenuItem[] = [
     harga: 40000,
     lokasi: "Bandung",
     hargaAwal: 40000,
-    qty: 0,
+    qty: 1,
   },
   {
     id: "15",
@@ -179,7 +179,7 @@ const menuItems: MenuItem[] = [
     harga: 15000,
     lokasi: "Surabaya",
     hargaAwal: 15000,
-    qty: 0,
+    qty: 1,
   },
   {
     id: "16",
@@ -189,7 +189,7 @@ const menuItems: MenuItem[] = [
     harga: 15000,
     lokasi: "Jakarta",
     hargaAwal: 15000,
-    qty: 0,
+    qty: 1,
   },
   {
     id: "17",
@@ -199,7 +199,7 @@ const menuItems: MenuItem[] = [
     harga: 25000,
     lokasi: "Bali",
     hargaAwal: 25000,
-    qty: 0,
+    qty: 1,
   },
   {
     id: "18",
@@ -209,7 +209,7 @@ const menuItems: MenuItem[] = [
     harga: 20000,
     lokasi: "Madiun",
     hargaAwal: 20000,
-    qty: 0,
+    qty: 1,
   },
   {
     id: "19",
@@ -219,7 +219,7 @@ const menuItems: MenuItem[] = [
     harga: 75000,
     lokasi: "Jakarta",
     hargaAwal: 75000,
-    qty: 0,
+    qty: 1,
   },
   {
     id: "20",
@@ -229,7 +229,7 @@ const menuItems: MenuItem[] = [
     harga: 35000,
     lokasi: "Jogja",
     hargaAwal: 35000,
-    qty: 0,
+    qty: 1,
   },
   {
     id: "21",
@@ -239,7 +239,7 @@ const menuItems: MenuItem[] = [
     harga: 30000,
     lokasi: "Bali",
     hargaAwal: 30000,
-    qty: 0,
+    qty: 1,
   },
   {
     id: "22",
@@ -249,7 +249,7 @@ const menuItems: MenuItem[] = [
     harga: 18000,
     lokasi: "Makassar",
     hargaAwal: 18000,
-    qty: 0,
+    qty: 1,
   },
   {
     id: "23",
@@ -259,7 +259,7 @@ const menuItems: MenuItem[] = [
     harga: 25000,
     lokasi: "Bandung",
     hargaAwal: 25000,
-    qty: 0,
+    qty: 1,
   },
   {
     id: "24",
@@ -269,7 +269,7 @@ const menuItems: MenuItem[] = [
     harga: 15000,
     lokasi: "Jakarta",
     hargaAwal: 15000,
-    qty: 0,
+    qty: 1,
   },
   {
     id: "25",
@@ -279,7 +279,7 @@ const menuItems: MenuItem[] = [
     harga: 40000,
     lokasi: "Surabaya",
     hargaAwal: 40000,
-    qty: 0,
+    qty: 1,
   },
   {
     id: "26",
@@ -289,7 +289,7 @@ const menuItems: MenuItem[] = [
     harga: 10000,
     lokasi: "Semarang",
     hargaAwal: 10000,
-    qty: 0,
+    qty: 1,
   },
   {
     id: "27",
@@ -299,7 +299,7 @@ const menuItems: MenuItem[] = [
     harga: 25000,
     lokasi: "Jogja",
     hargaAwal: 25000,
-    qty: 0,
+    qty: 1,
   },
   {
     id: "28",
@@ -309,7 +309,7 @@ const menuItems: MenuItem[] = [
     harga: 20000,
     lokasi: "Bandung",
     hargaAwal: 25000,
-    qty: 0,
+    qty: 1,
   },
   {
     id: "29",
@@ -319,7 +319,7 @@ const menuItems: MenuItem[] = [
     harga: 18000,
     lokasi: "Bogor",
     hargaAwal: 18000,
-    qty: 0,
+    qty: 1,
   },
   {
     id: "30",
@@ -329,7 +329,7 @@ const menuItems: MenuItem[] = [
     harga: 35000,
     lokasi: "Bali",
     hargaAwal: 35000,
-    qty: 0,
+    qty: 1,
   },
 ];
 
