@@ -8,8 +8,8 @@ import { CartProvider } from "./context/CartContext";
 function App() {
   return (
     <>
-      <CartProvider>
-        <BrowserRouter>
+      <BrowserRouter>
+        <CartProvider>
           <Routes>
             <Route
               index
@@ -18,8 +18,8 @@ function App() {
             />
             <Route path="checkout-details/:id" element={<CheckoutDetails />} />
           </Routes>
-        </BrowserRouter>
-      </CartProvider>
+        </CartProvider>
+      </BrowserRouter>
     </>
   );
 }

@@ -85,23 +85,3 @@ function CartProvider({ children }: { children: ReactNode }) {
 }
 
 export { CartContext, CartProvider };
-
-// if (existData) {
-//   const updateData = cart.map((cartItem) =>
-//     cartItem.id === item.id
-//       ? {
-//           ...cartItem,
-//           qty: (cartItem.qty ?? 0) + 1,
-//           harga:
-//             (cartItem.hargaAwal ?? cartItem.harga) *
-//             ((cartItem.qty ?? 0) + 1),
-//         }
-//       : cartItem
-//   );
-//   setCart(updateData);
-// } else {
-//   setCart([
-//     ...cart,
-//     { ...item, qty: 1, harga: item.harga, hargaAwal: item.harga },
-//   ]);
-// }
